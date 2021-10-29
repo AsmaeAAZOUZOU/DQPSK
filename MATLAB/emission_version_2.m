@@ -16,7 +16,7 @@ f0=1.255e9; % Porteuse pour le calcul du PL
 roll_off=0.8;
 Nfft=2048; % Nombre de points sur lequel la FFT est effectuee
 A=127; % Amplitude
-Nb_paquets=48;
+Nb_paquets=48;  % Nb_paquets >=2
 Octet_verif = hexToBinaryVector('0xAA');
 
 
