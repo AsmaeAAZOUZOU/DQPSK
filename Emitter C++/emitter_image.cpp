@@ -56,7 +56,7 @@ int main(){
     for (int32_t j = 1; j <= length_signal/length_paquet; j++){
 
         cout << j << endl;  
-        vector<uint8_t> vect{(b->vec).begin()+(j-1)*length_paquet, (b->vec).begin() +length_paquet+(j-1)*length_paquet};
+        vector<uint8_t> vect{(b->vec).begin()+(j-1)*length_paquet, (b->vec).begin() +length_paquet+(j-1)*length_paquet};  // a vector that conatins each sub-package of the signal
         vector<uint8_t> vect_check{1, 0, 1, 0, 1, 0, 1, 0};         //Octet de vérification '0xAA'
         vect_check.insert(vect_check.end(), vect.begin(), vect.end());
         
